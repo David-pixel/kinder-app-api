@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "WplO6i/qhHI=",
+  "success": true,
+  "projectFilePath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Infraestructura\\KinderAdminApi.Infraestructura.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dsala\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.3\\microsoft.extensions.configuration.10.0.3.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.3\\microsoft.extensions.configuration.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\npgsql\\10.0.1\\npgsql.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

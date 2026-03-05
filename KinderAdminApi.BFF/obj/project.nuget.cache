@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "lU81l2xPspE=",
+  "success": true,
+  "projectFilePath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.16.0\\microsoft.identitymodel.abstractions.8.16.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.16.0\\microsoft.identitymodel.jsonwebtokens.8.16.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.identitymodel.logging\\8.16.0\\microsoft.identitymodel.logging.8.16.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.16.0\\microsoft.identitymodel.tokens.8.16.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.4\\swashbuckle.aspnetcore.10.1.4.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\10.1.4\\swashbuckle.aspnetcore.annotations.10.1.4.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.4\\swashbuckle.aspnetcore.swagger.10.1.4.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.4\\swashbuckle.aspnetcore.swaggergen.10.1.4.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.4\\swashbuckle.aspnetcore.swaggerui.10.1.4.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.16.0\\system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
+    "C:\\Users\\dsala\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

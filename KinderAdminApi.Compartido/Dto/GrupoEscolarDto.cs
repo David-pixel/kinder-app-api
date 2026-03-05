@@ -1,0 +1,14 @@
+namespace KinderAdminApi.Compartido.Dto
+{
+    public sealed class GrupoEscolarDto
+    {
+        public short Id { get; set; }
+        public string Codigo { get; set; } = string.Empty;
+        public string Nombre { get; set; } = string.Empty;
+        public int EdadMinimaMeses { get; set; }
+        public int EdadMaximaMeses { get; set; }
+        public int OrdenVisualizacion { get; set; }
+        public bool Activo { get; set; }
+        public DateTimeOffset CreadoEn { get; set; }
+    }
+}

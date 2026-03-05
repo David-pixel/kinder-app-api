@@ -1,0 +1,11 @@
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\bin\Debug\net9.0\KinderAdminApi.Dominio.deps.json
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\bin\Debug\net9.0\KinderAdminApi.Dominio.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\bin\Debug\net9.0\KinderAdminApi.Dominio.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.AssemblyInfoInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.AssemblyInfo.cs
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.csproj.CoreCompileInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\refint\KinderAdminApi.Dominio.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\KinderAdminApi.Dominio.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Dominio\obj\Debug\net9.0\ref\KinderAdminApi.Dominio.dll

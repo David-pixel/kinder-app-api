@@ -1,0 +1,17 @@
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Aplicacion.deps.json
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Aplicacion.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Aplicacion.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Compartido.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Dominio.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Compartido.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\bin\Debug\net9.0\KinderAdminApi.Dominio.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.csproj.AssemblyReference.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.AssemblyInfoInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.AssemblyInfo.cs
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.csproj.CoreCompileInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAd.47F28AEE.Up2Date
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\refint\KinderAdminApi.Aplicacion.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\KinderAdminApi.Aplicacion.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Aplicacion\obj\Debug\net9.0\ref\KinderAdminApi.Aplicacion.dll

@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|f:\\apps\\kgardenapp\\kider-app-api\\kinderadminapi\\kinderadminapi\\kinderadminapi.bff\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|solutionrelative:kinderadminapi.bff\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|f:\\apps\\kgardenapp\\kider-app-api\\kinderadminapi\\kinderadminapi\\kinderadminapi.bff\\controllers\\autenticacioncontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|solutionrelative:kinderadminapi.bff\\controllers\\autenticacioncontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|f:\\apps\\kgardenapp\\kider-app-api\\kinderadminapi\\kinderadminapi\\kinderadminapi.bff\\controllers\\catalogoscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0F2807-9C10-4843-936C-3CDDDADD57DE}|KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj|solutionrelative:kinderadminapi.bff\\controllers\\catalogoscontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0D29F3-BADE-4906-A3A3-148AAAA4A3A9}|KinderAdminApi.API\\KinderAdminApi.API.csproj|f:\\apps\\kgardenapp\\kider-app-api\\kinderadminapi\\kinderadminapi\\kinderadminapi.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF0D29F3-BADE-4906-A3A3-148AAAA4A3A9}|KinderAdminApi.API\\KinderAdminApi.API.csproj|solutionrelative:kinderadminapi.api\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 249,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "KinderAdminApi.BFF\\Controllers\\ColaboradorController.cs",
+              "ToolTip": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "KinderAdminApi.BFF\\Controllers\\ColaboradorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T00:39:11.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutenticacionController .cs",
+              "DocumentMoniker": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\AutenticacionController .cs",
+              "RelativeDocumentMoniker": "KinderAdminApi.BFF\\Controllers\\AutenticacionController .cs",
+              "ToolTip": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\AutenticacionController .cs",
+              "RelativeToolTip": "KinderAdminApi.BFF\\Controllers\\AutenticacionController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T00:39:08.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatalogosController .cs",
+              "DocumentMoniker": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\CatalogosController .cs",
+              "RelativeDocumentMoniker": "KinderAdminApi.BFF\\Controllers\\CatalogosController .cs",
+              "ToolTip": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\Controllers\\CatalogosController .cs",
+              "RelativeToolTip": "KinderAdminApi.BFF\\Controllers\\CatalogosController .cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAADgv14AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:50:53.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.API\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "KinderAdminApi.API\\Controllers\\ColaboradorController.cs",
+              "ToolTip": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.API\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "KinderAdminApi.API\\Controllers\\ColaboradorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T23:40:33.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

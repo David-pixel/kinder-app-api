@@ -1,0 +1,539 @@
+[
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.AutenticacionController",
+    "Method": "Login",
+    "RelativePath": "api/Autenticacion/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KinderAdminApi.Compartido.Dto.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[KinderAdminApi.Compartido.Dto.RespuestaLoginDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 401
+      }
+    ],
+    "EndpointName": "BFF_Login"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerCantones",
+    "RelativePath": "api/Catalogos/cantones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoProvincia",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.CantonDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerCantones"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerDistritos",
+    "RelativePath": "api/Catalogos/distritos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoCanton",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.DistritoDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerDistritos"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerEstadosAsistencia",
+    "RelativePath": "api/Catalogos/estados-asistencia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.EstadoAsistenciaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerEstadosAsistencia"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerEstadosCiviles",
+    "RelativePath": "api/Catalogos/estados-civiles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.EstadoCivilDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerEstadosCiviles"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerEstadosMatricula",
+    "RelativePath": "api/Catalogos/estados-matricula",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.EstadoMatriculaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerEstadosMatricula"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerGeneros",
+    "RelativePath": "api/Catalogos/generos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.GeneroDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerGeneros"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerGruposEscolares",
+    "RelativePath": "api/Catalogos/grupos-escolares",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.GrupoEscolarDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerGruposEscolares"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerIdiomas",
+    "RelativePath": "api/Catalogos/idiomas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.IdiomaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerIdiomas"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerNacionalidades",
+    "RelativePath": "api/Catalogos/nacionalidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.NacionalidadDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerNacionalidades"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerNivelesEducativos",
+    "RelativePath": "api/Catalogos/niveles-educativos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.NivelEducativoDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerNivelesEducativos"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerOcupaciones",
+    "RelativePath": "api/Catalogos/ocupaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.OcupacionDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerOcupaciones"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerProvincias",
+    "RelativePath": "api/Catalogos/provincias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.ProvinciaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerProvincias"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerRazonesAusencia",
+    "RelativePath": "api/Catalogos/razones-ausencia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.RazonAusenciaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerRazonesAusencia"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerRoles",
+    "RelativePath": "api/Catalogos/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.RolDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerRoles"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerRolesAula",
+    "RelativePath": "api/Catalogos/roles-aula",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.RolAulaDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerRolesAula"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerTiposEstudiante",
+    "RelativePath": "api/Catalogos/tipos-estudiante",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.TipoEstudianteDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerTiposEstudiante"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerTiposHorario",
+    "RelativePath": "api/Catalogos/tipos-horario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.TipoHorarioDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerTiposHorario"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerTiposIdentificacion",
+    "RelativePath": "api/Catalogos/tipos-identificacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.TipoIdentificacionDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerTiposIdentificacion"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerTiposRelacion",
+    "RelativePath": "api/Catalogos/tipos-relacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.TipoRelacionDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerTiposRelacion"
+  },
+  {
+    "ContainingType": "KinderAPP.BFF.Controllers.CatalogosController",
+    "Method": "ObtenerTiposSangre",
+    "RelativePath": "api/Catalogos/tipos-sangre",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int16, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.TipoSangreDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerTiposSangre"
+  },
+  {
+    "ContainingType": "KinderAdminApi.BFF.Controllers.ColaboradoresController",
+    "Method": "ObtenerColaboradores",
+    "RelativePath": "api/Colaboradores/colaboradores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activo",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KinderAdminApi.Compartido.Repuestas.RespuestaGenerica\u00601[[System.Collections.Generic.IEnumerable\u00601[[KinderAdminApi.Compartido.Dto.ColaboradorDto, KinderAdminApi.Compartido, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "BFF_ObtenerColaboradores"
+  },
+  {
+    "ContainingType": "KinderAdminApi.BFF.Controllers.ColaboradoresController",
+    "Method": "CrearColaborador",
+    "RelativePath": "api/Colaboradores/crearColaborador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "KinderAdminApi.Compartido.Dto.CrearColaboradorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

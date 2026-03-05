@@ -1,0 +1,250 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Pruebas\\KinderAdminApi.Pruebas.csproj": {}
+  },
+  "projects": {
+    "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj",
+        "projectName": "KinderAdminApi.BFF",
+        "projectPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj",
+        "packagesPath": "C:\\Users\\dsala\\.nuget\\packages\\",
+        "outputPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\KinderAdminApi.Compartido.csproj": {
+                "projectPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\KinderAdminApi.Compartido.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[10.1.4, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.16.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\KinderAdminApi.Compartido.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\KinderAdminApi.Compartido.csproj",
+        "projectName": "KinderAdminApi.Compartido",
+        "projectPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\KinderAdminApi.Compartido.csproj",
+        "packagesPath": "C:\\Users\\dsala\\.nuget\\packages\\",
+        "outputPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Compartido\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Pruebas\\KinderAdminApi.Pruebas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Pruebas\\KinderAdminApi.Pruebas.csproj",
+        "projectName": "KinderAdminApi.Pruebas",
+        "projectPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Pruebas\\KinderAdminApi.Pruebas.csproj",
+        "packagesPath": "C:\\Users\\dsala\\.nuget\\packages\\",
+        "outputPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.Pruebas\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dsala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj": {
+                "projectPath": "F:\\apps\\KGardenApp\\kider-app-api\\KinderAdminApi\\KinderAdminApi\\KinderAdminApi.BFF\\KinderAdminApi.BFF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

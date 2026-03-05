@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Framework de .NET -->
+    <TargetFramework>net9.0</TargetFramework>
+
+    <!-- No empaquetar, es un proyecto de pruebas -->
+    <IsPackable>false</IsPackable>
+
+    <!-- Habilita referencias nulas -->
+    <Nullable>enable</Nullable>
+
+    <!-- Usings implícitos para simplificar código -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Configuración de cobertura de código -->
+    <CollectCoverage>true</CollectCoverage>
+    <CoverletOutputFormat>cobertura,opencover</CoverletOutputFormat>
+
+    <!-- Ejecución paralela de tests -->
+    <ParallelizeAssembly>true</ParallelizeAssembly>
+    <ParallelizeTestCollections>true</ParallelizeTestCollections>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- xUnit -->
+    <PackageReference Include="xunit" Version="2.5.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.1">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <!-- SDK de test de .NET -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.0" />
+
+    <!-- Cobertura de código -->
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Referencia al proyecto que vas a probar -->
+    <ProjectReference Include="..\KinderAdminApi.BFF\KinderAdminApi.BFF.csproj" />
+  </ItemGroup>
+
+</Project>

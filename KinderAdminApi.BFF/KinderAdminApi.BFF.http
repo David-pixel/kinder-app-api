@@ -1,0 +1,6 @@
+@KinderAdminApi.BFF_HostAddress = http://localhost:5158
+
+GET {{KinderAdminApi.BFF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

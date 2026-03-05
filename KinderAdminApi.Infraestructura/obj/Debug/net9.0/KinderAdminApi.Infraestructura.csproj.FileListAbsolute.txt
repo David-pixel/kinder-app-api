@@ -1,0 +1,17 @@
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Infraestructura.deps.json
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Infraestructura.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Infraestructura.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Compartido.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Dominio.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Compartido.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\bin\Debug\net9.0\KinderAdminApi.Dominio.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.csproj.AssemblyReference.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.AssemblyInfoInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.AssemblyInfo.cs
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.csproj.CoreCompileInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAd.E9CC80D4.Up2Date
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\refint\KinderAdminApi.Infraestructura.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\KinderAdminApi.Infraestructura.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Infraestructura\obj\Debug\net9.0\ref\KinderAdminApi.Infraestructura.dll

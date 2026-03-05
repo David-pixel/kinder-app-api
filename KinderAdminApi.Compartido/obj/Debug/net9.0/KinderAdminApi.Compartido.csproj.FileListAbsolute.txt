@@ -1,0 +1,11 @@
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\bin\Debug\net9.0\KinderAdminApi.Compartido.deps.json
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\bin\Debug\net9.0\KinderAdminApi.Compartido.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\bin\Debug\net9.0\KinderAdminApi.Compartido.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.GeneratedMSBuildEditorConfig.editorconfig
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.AssemblyInfoInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.AssemblyInfo.cs
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.csproj.CoreCompileInputs.cache
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\refint\KinderAdminApi.Compartido.dll
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\KinderAdminApi.Compartido.pdb
+F:\apps\KGardenApp\kider-app-api\KinderAdminApi\KinderAdminApi\KinderAdminApi.Compartido\obj\Debug\net9.0\ref\KinderAdminApi.Compartido.dll

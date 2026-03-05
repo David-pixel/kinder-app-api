@@ -1,0 +1,2312 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "KinderAPP BFF",
+    "description": "Backend For Frontend — capa pública para el frontend",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Autenticacion/login": {
+      "post": {
+        "tags": [
+          "Autenticacion"
+        ],
+        "operationId": "BFF_Login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login exitoso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RespuestaLoginDtoRespuestaGenerica"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Credenciales inválidas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/tipos-identificacion": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerTiposIdentificacion",
+        "responses": {
+          "200": {
+            "description": "Lista de tipos de identificación",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoIdentificacionDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/generos": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerGeneros",
+        "responses": {
+          "200": {
+            "description": "Lista de géneros",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneroDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/estados-matricula": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerEstadosMatricula",
+        "responses": {
+          "200": {
+            "description": "Lista de estados de matrícula",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoMatriculaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/razones-ausencia": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerRazonesAusencia",
+        "responses": {
+          "200": {
+            "description": "Lista de razones de ausencia",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RazonAusenciaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/estados-asistencia": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerEstadosAsistencia",
+        "responses": {
+          "200": {
+            "description": "Lista de estados de asistencia",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoAsistenciaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/provincias": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerProvincias",
+        "responses": {
+          "200": {
+            "description": "Lista de provincias",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProvinciaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/cantones": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerCantones",
+        "parameters": [
+          {
+            "name": "codigoProvincia",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de cantones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CantonDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/distritos": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerDistritos",
+        "parameters": [
+          {
+            "name": "codigoCanton",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de distritos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DistritoDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/niveles-educativos": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerNivelesEducativos",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de niveles educativos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NivelEducativoDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/idiomas": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerIdiomas",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de idiomas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IdiomaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/estados-civiles": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerEstadosCiviles",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de estados civiles",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCivilDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/nacionalidades": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerNacionalidades",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de nacionalidades",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NacionalidadDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/ocupaciones": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerOcupaciones",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de ocupaciones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OcupacionDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/tipos-relacion": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerTiposRelacion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de tipos de relación",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoRelacionDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/roles": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerRoles",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de roles",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/tipos-horario": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerTiposHorario",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de tipos de horario",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoHorarioDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/grupos-escolares": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerGruposEscolares",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de grupos escolares",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrupoEscolarDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/tipos-estudiante": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerTiposEstudiante",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de tipos de estudiante",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoEstudianteDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/roles-aula": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerRolesAula",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de roles de aula",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RolAulaDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Catalogos/tipos-sangre": {
+      "get": {
+        "tags": [
+          "Catalogos"
+        ],
+        "operationId": "BFF_ObtenerTiposSangre",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de tipos de sangre",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoSangreDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Colaboradores/colaboradores": {
+      "get": {
+        "tags": [
+          "Colaboradores"
+        ],
+        "operationId": "BFF_ObtenerColaboradores",
+        "parameters": [
+          {
+            "name": "activo",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de colaboradores",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ColaboradorDtoIEnumerableRespuestaGenerica"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Colaboradores/crearColaborador": {
+      "post": {
+        "tags": [
+          "Colaboradores"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearColaboradorDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearColaboradorDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearColaboradorDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CantonDto": {
+        "type": "object",
+        "properties": {
+          "codigoCanton": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoProvincia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CantonDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CantonDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ColaboradorDto": {
+        "type": "object",
+        "properties": {
+          "idColaborador": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "codigoColaborador": {
+            "type": "string",
+            "nullable": true
+          },
+          "idPersona": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nombreCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoCelular": {
+            "type": "string",
+            "nullable": true
+          },
+          "idRol": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rolCodigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "rolNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEstado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoCodigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaContratacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaSalida": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "tieneUsuario": {
+            "type": "boolean"
+          },
+          "grupos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ColaboradorDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ColaboradorDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearColaboradorDto": {
+        "type": "object",
+        "properties": {
+          "idTipoIdentificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numeroIdentificacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "idRol": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaContratacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "idGenero": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idNacionalidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idEstadoCivil": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idNivelEducativo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idOcupacion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "idTipoSangre": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoCelular": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoFijo": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoProvincia": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "codigoCanton": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "codigoDistrito": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detalleDireccion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DetalleError": {
+        "type": "object",
+        "properties": {
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "detalles": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DistritoDto": {
+        "type": "object",
+        "properties": {
+          "codigoDistrito": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoCanton": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DistritoDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DistritoDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoAsistenciaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoAsistenciaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EstadoAsistenciaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoCivilDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoCivilDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EstadoCivilDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoMatriculaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoMatriculaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EstadoMatriculaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoRespuesta": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "GeneroDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GeneroDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GeneroDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GrupoEscolarDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "edadMinimaMeses": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edadMaximaMeses": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GrupoEscolarDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrupoEscolarDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IdiomaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IdiomaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IdiomaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "nombreUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrasenna": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NacionalidadDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigoIso": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NacionalidadDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NacionalidadDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NivelEducativoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NivelEducativoDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NivelEducativoDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjectRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OcupacionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OcupacionDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OcupacionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProvinciaDto": {
+        "type": "object",
+        "properties": {
+          "codigoProvincia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProvinciaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProvinciaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RazonAusenciaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RazonAusenciaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RazonAusenciaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespuestaLoginDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido1": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido2": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "codigosRoles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "expiraEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RespuestaLoginDtoRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "$ref": "#/components/schemas/RespuestaLoginDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolAulaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolAulaDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RolAulaDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RolDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RolDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoEstudianteDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoEstudianteDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoEstudianteDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoHorarioDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoHorarioDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoHorarioDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoIdentificacionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "mascara": {
+            "type": "string",
+            "nullable": true
+          },
+          "regex": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoIdentificacionDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoIdentificacionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoRelacionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoRelacionDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoRelacionDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoSangreDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "codigo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ordenVisualizacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "activo": {
+            "type": "boolean"
+          },
+          "creadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoSangreDtoIEnumerableRespuestaGenerica": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "$ref": "#/components/schemas/EstadoRespuesta"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          },
+          "error": {
+            "$ref": "#/components/schemas/DetalleError"
+          },
+          "correlationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "esExito": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TipoSangreDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Autenticacion"
+    },
+    {
+      "name": "Catalogos"
+    },
+    {
+      "name": "Colaboradores"
+    }
+  ]
+}

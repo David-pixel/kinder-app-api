@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3af8b2b9-ce38-4300-a016-8f0e5cf34611</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="10.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KinderAdminApi.Aplicacion\KinderAdminApi.Aplicacion.csproj" />
+    <ProjectReference Include="..\KinderAdminApi.Infraestructura\KinderAdminApi.Infraestructura.csproj" />
+  </ItemGroup>
+
+</Project>
